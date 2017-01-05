@@ -1,4 +1,5 @@
 class StockDataDownloader
+  BASE_PATH = "/Users/hhemanth/workspace/try/stock_data_analyzer"
 
 
    def get_date_url
@@ -31,7 +32,7 @@ class StockDataDownloader
     stock_arr.each { |st|
       download_url = BASE_URL + "s=" + st + date_url
       download_url_arr.push(download_url)
-      file_name = "data/" + st
+      file_name = "#{BASE_PATH}/data/" + st
       puts download_url
       download_csv(download_url,file_name)
     }

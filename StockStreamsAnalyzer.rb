@@ -1,11 +1,11 @@
 require 'open-uri'
 require 'date'
-require './config'
+require_relative './config'
 require 'net/http'
 
-require './StockStream.rb'
+require_relative './StockStream.rb'
 BASE_URL = "http://real-chart.finance.yahoo.com/table.csv?"
-
+BASE_PATH = "/Users/hhemanth/workspace/try/stock_data_analyzer"
 
 class StockStreamsAnalyzer
   attr_reader :stock_list, :top5,:bottom5,:stock_stream_arr
@@ -36,7 +36,7 @@ class StockStreamsAnalyzer
   end
 
   def get_file(sym)
-    file = "data/" + sym
+    file = "#{BASE_PATH}/data/" + sym
   end
 
   def build_top5_bottom5

@@ -1,5 +1,5 @@
-require './StockStreamsAnalyzer'
-require './StockDataDownloader'
+require_relative './StockStreamsAnalyzer'
+require_relative './StockDataDownloader'
 
 def main
   sdd = StockDataDownloader.new

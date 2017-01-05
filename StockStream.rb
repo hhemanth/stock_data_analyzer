@@ -1,4 +1,4 @@
-require './DailyQuote'
+require_relative './DailyQuote'
 require 'csv'
 
 class StockStream
