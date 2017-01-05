@@ -5,7 +5,6 @@ require 'net/http'
 
 require_relative './StockStream.rb'
 BASE_URL = "http://real-chart.finance.yahoo.com/table.csv?"
-BASE_PATH = "/Users/hhemanth/workspace/try/stock_data_analyzer"
 
 class StockStreamsAnalyzer
   attr_reader :stock_list, :top5,:bottom5,:stock_stream_arr

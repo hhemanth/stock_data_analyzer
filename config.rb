@@ -1,3 +1,5 @@
+# BASE_PATH = "/Users/hhemanth/workspace/try/stock_data_analyzer"
+BASE_PATH = "/home/ubuntu/src/stock_data_analyzer"
 ALL_STOCK_SYMBOLS = "ABIRLANUVO.NS
 ACC.NS
 ALBK.NS

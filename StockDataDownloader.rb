@@ -1,6 +1,5 @@
+require_relative './config'
 class StockDataDownloader
-  BASE_PATH = "/Users/hhemanth/workspace/try/stock_data_analyzer"
-
 
    def get_date_url
     ##to date
