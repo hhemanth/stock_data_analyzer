@@ -1,5 +1,5 @@
-BASE_PATH = "/Users/hemanth.haridas/try/stock_data_analyzer"
-# BASE_PATH = "/home/ubuntu/src/stock_data_analyzer"
+# BASE_PATH = "/Users/hemanth.haridas/try/stock_data_analyzer"
+BASE_PATH = "/home/ubuntu/src/stock_data_analyzer"
 ALL_STOCK_SYMBOLS = ["ABIRLANUVO.NS", "ACC.NS", "ADANIENT.NS", "ADANIPORTS.NS", 
 	"ADANIPOWER.NS", "AJANTPHARM.NS", "ALBK.NS", "AMARAJABAT.NS", "AMBUJACEM.NS", 
 	"ANDHRABANK.NS", "APOLLOHOSP.NS", "APOLLOTYRE.NS", "ARVIND.NS", "ASHOKLEY.NS", 
