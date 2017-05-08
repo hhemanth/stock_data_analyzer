@@ -10,7 +10,7 @@ class StockStreamsAnalyzer
   attr_reader :stock_list, :top5,:bottom5,:stock_stream_arr
 
   def initialize
-    @stock_list = ALL_STOCK_SYMBOLS.split()
+    @stock_list = ALL_STOCK_SYMBOLS
     @stock_stream_arr = Array.new
     @stock_list.each { |s|
       st = StockStream.new(s,get_file(s))

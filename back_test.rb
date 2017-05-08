@@ -241,7 +241,7 @@ end
 def main
   stock_sym_list_str = ""
   print ALL_STOCK_SYMBOLS
-  stock_arr = ALL_STOCK_SYMBOLS.split()
+  stock_arr = ALL_STOCK_SYMBOLS
   puts ""
   #got all the symbols
   date_url = get_date_url()

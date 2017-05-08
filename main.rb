@@ -6,8 +6,8 @@ def main
   p "*************" * 5
   sdd = StockDataDownloader.new
   sdd.download_stock_data
-  st = StockStreamsAnalyzer.new
-  st.analyze
+  # st = StockStreamsAnalyzer.new
+  # st.analyze
 end
 
 

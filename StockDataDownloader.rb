@@ -22,7 +22,7 @@ class StockDataDownloader
   end
 
   def download_stock_data
-    stock_arr = ALL_STOCK_SYMBOLS.split()
+    stock_arr = ALL_STOCK_SYMBOLS
     puts ""
   #got all the symbols
     date_url = get_date_url()
@@ -64,9 +64,11 @@ class StockDataDownloader
     i =0
     while i < 5
       puts "Retrying " + i.to_s
-      res = Net::HTTP.get_response(uri)
-      save_to_file(file,res)
+      res = Net::HTTP.get_response(uri) rescue "rescued"
       i+=1
+      p res
+      next if res == "rescued"
+      save_to_file(file,res)
       if res.code == '200' || i > 5
         break
       end
