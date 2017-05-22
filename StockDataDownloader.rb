@@ -37,6 +37,22 @@ class StockDataDownloader
     }
   end
 
+   def download_stock_data_new
+    stock_arr = ALL_STOCK_SYMBOLS
+    puts ""
+  #got all the symbols
+    date_url = get_date_url()
+    download_url_arr = Array.new()
+
+    stock_arr.each { |st|
+      download_url = "https://www.quandl.com/api/v3/datasets/NSE/#{st.split('.')[0]}.csv?api_key=7xcyJqy5Nsrh2ZUieXxX"
+      download_url_arr.push(download_url)
+      file_name = "#{BASE_PATH}/data/" + st
+      puts download_url
+      download_csv(download_url,file_name)
+    }
+  end
+
   def download_csv(stock_url,filename)
     uri = URI(stock_url)
     sleep(1)
